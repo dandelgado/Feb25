@@ -23,7 +23,7 @@
 
             <!--NAVBAR-->
             <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="images/popcorn.png" width="30" height="30" class="d-inline-block align-top" alt="">
                     Popcorn
                 </a>
@@ -90,12 +90,31 @@
                                 TICKETS & SHOWTIMES
                             </a>
                         </li>
-                        
+
                         <!--LOG IN Button-->
-                        <li class="nav-item" style="border-left: solid 1px black">
-                            <a class="nav-link" href="#">
+                        <li class="nav-item dropdown" style="border-left: solid 1px black">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 LOG IN
                             </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="container">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Save Password</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Log In</button>
+                                    </form>
+                                </div>
+                            </div>
                         </li>
 
                         <!--SIGN UP Button-->
@@ -113,49 +132,66 @@
 
             <br>
 
-            <div id="movieTitle">
-              <img class="img-fluid mx-auto d-block" alt="Responsive image" src="images/panther3.jpg">
-              <h3>BLACK PANTHER <span class="h5">(2018)</span></h4>
-            </div>
+            <!--<div id="movieTitle">
+                <img class="img-fluid mx-auto d-block" alt="Responsive image" src="images/panther3.jpg">
+                <h3>BLACK PANTHER <span class="h5">(2018)</span></h4>
+            </div>-->
 
             <div id="movieDetails">
-              <div class="row">
-
-                <div class="col-md-3">
-                  <img class="img-thumbnail thumbnail" alt="Responsive image" src="images/panther4.jpg">
-                </div>
-  
-                <div class="col-md-9">
-                  <div class="row">
-                    <div class="col-sm">
-                      <p>TOMATOMETER</p>
-                      <h3>97%</h3>
-                      <p>Average Rating: 8.2/10 <br>
-                          Reviews Counted: 335 <br>
-                          Fresh: 324 <br>
-                          Rotten: 11 </p>
+                <div class="container">
+                    <div class="row">
+                        <div id="movieTitle" class="container">
+                            <h3>BLACK PANTHER <span class="h5">(2018)</span></h3>
+                        </div>
                     </div>
-    
-                    <div class="col-sm">
-                      <p>AUDIENCE SCORE</p>
-                      <h3>78%</h3>
-                      <p> Average Rating: 4.1/5 <br>
-                          User Ratings: 62,654 </p>
+                    <div class="row">
+
+                        <div class="col-md-3">
+                            <img class="img-thumbnail thumbnail" alt="Responsive image" src="images/panther.jpeg">
+                        </div>
+
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <p><b>CRITIC SCORE</b></p>
+                                    <h3>97%</h3>
+                                    <p>Average Rating: 8.2/10 <br>
+                                        Reviews Counted: 335 <br>
+                                        Fresh: 324 <br>
+                                        Rotten: 11 </p>
+                                </div>
+
+                                <div class="col-sm">
+                                    <p><b>AUDIENCE SCORE</b></p>
+                                    <h3>78%</h3>
+                                    <p> Average Rating: 4.1/5 <br>
+                                        User Ratings: 62,654 </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <p><b>Synopsis:</b> "Black Panther" follows T'Challa who, after the events of "Captain America: Civil War," returns home to the isolated, 
+                                    technologically advanced African nation of Wakanda to take his place as King. However, when an old enemy reappears on the radar, T'Challa's 
+                                    mettle as King and Black Panther is tested when he is drawn into a conflict that puts the entire fate of Wakanda and the world at risk.<br>
+                                    <b>Release Date:</b> Feb 16, 2018 Worldwide<br>
+                                    <b>Runtime:</b> 135 minutes<br>
+                                    <b>Directed by:</b> <a href="#" class="text-dark">Ryan Coogler</a><br>
+                                    <b>Written by:</b> <a href="#" class="text-dark">Ryan Coogler</a>, <a href="#" class="text-dark">Joe Robert Cole</a> | 2 more credits » <br>
+                                    <b>Cast:</b> <a href="#" class="text-dark">Chadwick Boseman</a>, <a href="#" class="text-dark">Michael B. Jordan</a>, 
+                                    <a href="#" class="text-dark">Lupita Nyong'o</a> | <a href="#" class="text-dark">See full cast & crew »</a>
+                                    <b>Studio:</b> Marvel Studios<br>
+                                </p>
+                            </div>
+                            <div class="row">
+
+                            </div>
+                        </div>
+
                     </div>
-                  </div>
-
-                  <div class="row">
-                    <p>T'Challa, the King of Wakanda, rises to the throne in the isolated, technologically advanced African nation, 
-                      but his claim is challenged by a vengeful outsider who was a childhood victim of T'Challa's father's mistake. <br>
-                        Director: Ryan Coogler <br>
-                        Writers: Ryan Coogler, Joe Robert Cole | 2 more credits » <br>
-                        Stars: Chadwick Boseman, Michael B. Jordan, Lupita Nyong'o | See full cast & crew »
-                      </p>
-                  </div>
                 </div>
-
-              </div>
             </div>
+
+            <hr>
 
             <div class="row">
                 <div class="col-sm">
