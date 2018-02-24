@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/movie_detail_style.css">
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <title>Popcorn</title>
+   <style>
+   .user-icon{
+       width:60px;
+       height:60px;
+   }
+   .movie-score-icon{
+       width:25px;
+       height:25px;
+   }
+   .movie-img{
+       width:200px;
+       height:300px;
+   }
+   .reviews{
+       border:1px solid lightgrey;
+       border-radius:5px;
+       padding:20px;
+       margin-left:-10px;
+   }
+
+   .side-bar{
+    border:1px solid lightgrey;
+       border-radius:5px;
+       padding:20px;
+   }
+
+   .movie-name{
+       font-weight:bold;
+   }
+   </style>
+   
+    </head>
+
+
+    <!--BODY-->
+    <body class="bg-dark">
+        <div class="container bg-white">
+
+            <!--NAVBAR-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+                <a class="navbar-brand" href="#">
+                    <img src="images/popcorn.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    Popcorn
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav ml-auto">
+
+                        <!--Search Bar-->
+                        <form class="form-inline" style="padding-right: 30px;">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-default" type="submit">Search</button>
+                        </form>
+                        <!--Search Bar-->
+
+                        <!--Movies & DVDs Drop Down Menu-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MOVIES & DVDs
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Opening This Week</a>
+                                <a class="dropdown-item" href="#">Top Box Office</a>
+                                <a class="dropdown-item" href="#">Coming Soon to Theaters</a>
+                                <a class="dropdown-item" href="#">Weekend Earnings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Top DVD and Streaming</a>
+                                <a class="dropdown-item" href="#">New DVD Releases</a>
+                                <a class="dropdown-item" href="#">Coming Soon to DVD</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Browse All</a>
+                            </div>
+                        </li>
+                        <!--Movies & DVDs Drop Down Menu-->
+
+                        <!--TV Drop Down Menu-->
+                        <li class="nav-item dropdown" style="border-left: solid 1px black">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                TV
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">New TV Tonight</a>
+                                <a class="dropdown-item" href="#">Most Popular TV</a>
+                            </div>
+                        </li>
+                        <!--TV Drop Down Menu-->
+
+                        <!--TV Drop Down Menu-->
+                        <li class="nav-item dropdown" style="border-left: solid 1px black">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                NEWS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            </div>
+                        </li>
+                        <!--TV Drop Down Menu-->
+
+                        <!--TICKETS & SHOWTIMES Drop Down Menu-->
+                        <li class="nav-item" style="border-left: solid 1px black">
+                            <a class="nav-link" href="#">
+                                TICKETS & SHOWTIMES
+                            </a>
+                        </li>
+                        
+                        <!--LOG IN Button-->
+                        <li class="nav-item" style="border-left: solid 1px black">
+                            <a class="nav-link" href="#">
+                                LOG IN
+                            </a>
+                        </li>
+
+                        <!--SIGN UP Button-->
+                        <li class="nav-item" style="border-left: solid 1px black">
+                            <a class="nav-link" href="#">
+                                SIGN UP
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </nav>
+            <!--NAVBAR-->
+
+            <br>
+
+            <div class="page-body">
+                <div class="row">
+                
+                <div class="col-lg-4 text-center">
+                    <div class="side-bar">
+                        <img src="images/panther4.jpg" class="movie-img">
+                        <p class="movie-name">BLACK PANTHER</p>
+                        <p class="movie-score">
+                            <img class="movie-score-icon" src="images/popcorn.png">97% 
+                        </p>
+                        <p class="movie-details">
+                              PG-13,2 hr. 15 min.<br>
+                                  <a href="#" class="genre-link ">Drama</a>,
+                                  <a href="#" class="genre-link ">Action & Adventure</a>, 
+                                  <a href="#" class="genre-ink ">Science Fiction & Fantasy</a><br>
+                               Directed By:Ryan Coogler<br>
+                                In Theaters: Feb 16, 2018Wide<br>
+                                On DVD:Marvel Studios<br>
+                             
+                            </p>
+                </div></div>
+                
+                <div class="col-lg-8">
+                    <div class="reviews">
+                   <div class="row review_nav">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active all_critics text-dark" href="critics_review.html">All Critics</a>
+                        </li>
+        
+                        <li class="nav-item">
+                          <a class="nav-link all_audience text-dark" href="#">All Audience</a>
+                        </li>
+                      </ul>
+                </div>
+                <div class="row pagination">
+                    <div class="col-md-8">
+                    </div>
+                    <div class="col-md-4">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                              <li class="page-item">
+                                <a class="page-link text-dark" href="#" aria-label="Previous">
+                                  <span aria-hidden="true">&laquo;</span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                              </li>
+                              <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link text-dark" href="#" aria-label="Next">
+                                  <span aria-hidden="true">&raquo;</span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                    </div>
+
+                </div>
+                <div class="row reviews-body">
+                    <ul class="list-group list-group-flush reviews-list">
+                        <li class="list-group-item">
+                                <div class="row a-review">
+                                    <div class="col-md-4 user-info">
+                                                <img src="images/default_icon.png" class="img-thumbnail user-icon">
+                                                <a href="#" class="text-dark user-name" >Angela Liu</a>   
+                                    </div>
+                                    <div class="col-md-8 review-content">
+                                        <p>
+                                            This expansiveness is what is most thrilling about Black Panther: the film gives all of its black characters the space to be several things at once. To be both king and failure. Villain and revolutionary. Genius and warrior. 
+                                    </p></div>
+                                    
+                                </div>
+                            </li> 
+                            <li class="list-group-item">
+                                    <div class="row a-review">
+                                        <div class="col-md-4 user-info">
+                                                    <img src="images/default_icon.png" class="img-thumbnail user-icon">
+                                                    <a href="#" class="text-dark user-name" >Angela Liu</a>   
+                                        </div>
+                                        <div class="col-md-8 review-content">
+                                            <p>
+                                                This expansiveness is what is most thrilling about Black Panther: the film gives all of its black characters the space to be several things at once. To be both king and failure. Villain and revolutionary. Genius and warrior. 
+                                        </p></div>
+                                        
+                                    </div>
+                                </li> 
+                                <li class="list-group-item">
+                                        <div class="row a-review">
+                                            <div class="col-md-4 user-info">
+                                                        <img src="images/default_icon.png" class="img-thumbnail user-icon">
+                                                        <a href="#" class="text-dark user-name" >Angela Liu</a>   
+                                            </div>
+                                            <div class="col-md-8 review-content">
+                                                <p>
+                                                    This expansiveness is what is most thrilling about Black Panther: the film gives all of its black characters the space to be several things at once. To be both king and failure. Villain and revolutionary. Genius and warrior. 
+                                            </p></div>
+                                            
+                                        </div>
+                                    </li> 
+                                    <li class="list-group-item">
+                                            <div class="row a-review">
+                                                <div class="col-md-4 user-info">
+                                                            <img src="images/default_icon.png" class="img-thumbnail user-icon">
+                                                            <a href="#" class="text-dark user-name" >Angela Liu</a>   
+                                                </div>
+                                                <div class="col-md-8 review-content">
+                                                    <p>
+                                                        This expansiveness is what is most thrilling about Black Panther: the film gives all of its black characters the space to be several things at once. To be both king and failure. Villain and revolutionary. Genius and warrior. 
+                                                </p></div>
+                                                
+                                            </div>
+                                        </li> 
+                                        <li class="list-group-item">
+                                                <div class="row a-review">
+                                                    <div class="col-md-4 user-info">
+                                                                <img src="images/default_icon.png" class="img-thumbnail user-icon">
+                                                                <a href="#" class="text-dark user-name" >Angela Liu</a>   
+                                                    </div>
+                                                    <div class="col-md-8 review-content">
+                                                        <p>
+                                                            This expansiveness is what is most thrilling about Black Panther: the film gives all of its black characters the space to be several things at once. To be both king and failure. Villain and revolutionary. Genius and warrior. 
+                                                    </p></div>
+                                                    
+                                                </div>
+                                            </li> 
+                            
+                    </ul>
+                </div>
+
+            </div>
+                </div>
+
+            </div>
+        </div>
+
+            <hr>
+            
+
+            <div class="row">
+                <div class="col-sm">
+                    <a href="#" class="text-dark">
+                        Help
+                    </a>
+                    <br>
+                    <a href="#" class="text-dark">
+                        About Popcorn
+                    </a>
+                </div>
+            </div>
+
+            <br>
+
+        </div>
+    </body>
+    <!--BODY-->
+
+</html>
