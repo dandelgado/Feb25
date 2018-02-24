@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/movie_detail_style.css">
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <title>Popcorn</title>
+    </head>
+
+    <!--BODY-->
+    <body class="bg-dark">
+        <div class="container bg-white">
+
+            <!--NAVBAR-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+                <a class="navbar-brand" href="#">
+                    <img src="images/popcorn.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    Popcorn
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav ml-auto">
+
+                        <!--Search Bar-->
+                        <form class="form-inline" style="padding-right: 30px;">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-default" type="submit">Search</button>
+                        </form>
+                        <!--Search Bar-->
+
+                        <!--Movies & DVDs Drop Down Menu-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MOVIES & DVDs
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Opening This Week</a>
+                                <a class="dropdown-item" href="#">Top Box Office</a>
+                                <a class="dropdown-item" href="#">Coming Soon to Theaters</a>
+                                <a class="dropdown-item" href="#">Weekend Earnings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Top DVD and Streaming</a>
+                                <a class="dropdown-item" href="#">New DVD Releases</a>
+                                <a class="dropdown-item" href="#">Coming Soon to DVD</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Browse All</a>
+                            </div>
+                        </li>
+                        <!--Movies & DVDs Drop Down Menu-->
+
+                        <!--TV Drop Down Menu-->
+                        <li class="nav-item dropdown" style="border-left: solid 1px black">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                TV
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">New TV Tonight</a>
+                                <a class="dropdown-item" href="#">Most Popular TV</a>
+                            </div>
+                        </li>
+                        <!--TV Drop Down Menu-->
+
+                        <!--TV Drop Down Menu-->
+                        <li class="nav-item dropdown" style="border-left: solid 1px black">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                NEWS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            </div>
+                        </li>
+                        <!--TV Drop Down Menu-->
+
+                        <!--TICKETS & SHOWTIMES Drop Down Menu-->
+                        <li class="nav-item" style="border-left: solid 1px black">
+                            <a class="nav-link" href="#">
+                                TICKETS & SHOWTIMES
+                            </a>
+                        </li>
+                        
+                        <!--LOG IN Button-->
+                        <li class="nav-item" style="border-left: solid 1px black">
+                            <a class="nav-link" href="#">
+                                LOG IN
+                            </a>
+                        </li>
+
+                        <!--SIGN UP Button-->
+                        <li class="nav-item" style="border-left: solid 1px black">
+                            <a class="nav-link" href="#">
+                                SIGN UP
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </nav>
+            <!--NAVBAR-->
+
+            <br>
+
+            <div id="movieTitle">
+              <img class="img-fluid mx-auto d-block" alt="Responsive image" src="images/panther3.jpg">
+              <h3>BLACK PANTHER <span class="h5">(2018)</span></h4>
+            </div>
+
+            <div id="movieDetails">
+              <div class="row">
+
+                <div class="col-md-3">
+                  <img class="img-thumbnail thumbnail" alt="Responsive image" src="images/panther4.jpg">
+                </div>
+  
+                <div class="col-md-9">
+                  <div class="row">
+                    <div class="col-sm">
+                      <p>TOMATOMETER</p>
+                      <h3>97%</h3>
+                      <p>Average Rating: 8.2/10 <br>
+                          Reviews Counted: 335 <br>
+                          Fresh: 324 <br>
+                          Rotten: 11 </p>
+                    </div>
+    
+                    <div class="col-sm">
+                      <p>AUDIENCE SCORE</p>
+                      <h3>78%</h3>
+                      <p> Average Rating: 4.1/5 <br>
+                          User Ratings: 62,654 </p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <p>T'Challa, the King of Wakanda, rises to the throne in the isolated, technologically advanced African nation, 
+                      but his claim is challenged by a vengeful outsider who was a childhood victim of T'Challa's father's mistake. <br>
+                        Director: Ryan Coogler <br>
+                        Writers: Ryan Coogler, Joe Robert Cole | 2 more credits » <br>
+                        Stars: Chadwick Boseman, Michael B. Jordan, Lupita Nyong'o | See full cast & crew »
+                      </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                    <a href="#" class="text-dark">
+                        Help
+                    </a>
+                    <br>
+                    <a href="#" class="text-dark">
+                        About Popcorn
+                    </a>
+                </div>
+            </div>
+
+            <br>
+
+        </div>
+    </body>
+    <!--BODY-->
+
+</html>

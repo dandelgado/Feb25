@@ -1,0 +1,8 @@
+.thumbnail {        
+  width: 300px; 
+  overflow: auto;
+}
+
+#movieDetails {
+  background-color: #FEF7CD;
+}
