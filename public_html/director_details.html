@@ -1,170 +1,180 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/movie_detail_style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="css/movie_detail_style.css">
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <title>Ryan Coogler</title>
-    </head>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-    <!--BODY-->
-    <body class="bg-dark">
-        <div class="container bg-white">
+    <title>Ryan Coogler - Popcorn</title>
+</head>
 
-            <!--NAVBAR-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/popcorn.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                    Popcorn
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<!--BODY-->
+<body class="bg-dark">
+    <div class="container bg-white">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/popcorn.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Popcorn
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                    <ul class="navbar-nav ml-auto">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                        <!--Search Bar-->
-                        <li>
-                            <form class="form-inline" style="padding-right: 30px;">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-default" type="submit">Search</button>
-                            </form>
-                        </li>
-                        <!--Search Bar-->
+                <ul class="navbar-nav ml-auto">
 
-                        <!--Movies & DVDs Drop Down Menu-->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                MOVIES & DVDs
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Opening This Week</a>
-                                <a class="dropdown-item" href="top_box_office.html">Top Box Office</a>
-                                <a class="dropdown-item" href="upcoming_movies.html">Coming Soon to Theaters</a>
-                                <a class="dropdown-item" href="movie_weekend_earnings.html">Weekend Earnings</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="top_streaming_movies.html">Top DVD and Streaming</a>
-                                <a class="dropdown-item" href="#">New DVD Releases</a>
-                                <a class="dropdown-item" href="#">Coming Soon to DVD</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Browse All</a>
-                            </div>
-                        </li>
-                        <!--Movies & DVDs Drop Down Menu-->
+                    <!--Search Bar-->
+                    <li>
+                        <form class="form-inline" style="padding-right: 30px;">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-default" type="submit">Search</button>
+                        </form>
+                    </li>
+                    <!--Search Bar-->
 
-                        <!--TV Drop Down Menu-->
-                        <li class="nav-item dropdown" style="border-left: solid 1px black">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                TV
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="new_tv_ep_tonight.html">New TV Tonight</a>
-                                <a class="dropdown-item" href="top_tv_show.html">Most Popular TV</a>
-                            </div>
-                        </li>
-                        <!--TV Drop Down Menu-->
+                    <!--Movies & DVDs Drop Down Menu-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            MOVIES & DVDs
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Opening This Week</a>
+                            <a class="dropdown-item" href="top_box_office.html">Top Box Office</a>
+                            <a class="dropdown-item" href="upcoming_movies.html">Coming Soon to Theaters</a>
+                            <a class="dropdown-item" href="movie_weekend_earnings.html">Weekend Earnings</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="top_streaming_movies.html">Top DVD and Streaming</a>
+                            <a class="dropdown-item" href="#">New DVD Releases</a>
+                            <a class="dropdown-item" href="#">Coming Soon to DVD</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Browse All</a>
+                        </div>
+                    </li>
+                    <!--Movies & DVDs Drop Down Menu-->
 
-                        <!--TV Drop Down Menu-->
-                        <li class="nav-item dropdown" style="border-left: solid 1px black">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                NEWS
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            </div>
-                        </li>
-                        <!--TV Drop Down Menu-->
+                    <!--TV Drop Down Menu-->
+                    <li class="nav-item dropdown" style="border-left: solid 1px black">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            TV
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="new_tv_ep_tonight.html">New TV Tonight</a>
+                            <a class="dropdown-item" href="top_tv_show.html">Most Popular TV</a>
+                        </div>
+                    </li>
+                    <!--TV Drop Down Menu-->
 
-                        <!--TICKETS & SHOWTIMES Drop Down Menu-->
-                        <li class="nav-item" style="border-left: solid 1px black">
-                            <a class="nav-link" href="#">
-                                TICKETS & SHOWTIMES
-                            </a>
-                        </li>
+                    <!--TV Drop Down Menu-->
+                    <li class="nav-item dropdown" style="border-left: solid 1px black">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            NEWS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        </div>
+                    </li>
+                    <!--TV Drop Down Menu-->
 
-                        <!--LOG IN Button-->
-                        <li class="nav-item dropdown" style="border-left: solid 1px black">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                LOG IN
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <div class="container">
-                                    <form>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Email address</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword1">Password</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                            <label class="form-check-label" for="exampleCheck1">Save Password</label>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Log In</button>
-                                    </form>
+                    <!--TICKETS & SHOWTIMES Drop Down Menu-->
+                    <li class="nav-item" style="border-left: solid 1px black">
+                        <a class="nav-link" href="#">
+                            TICKETS & SHOWTIMES
+                        </a>
+                    </li>
+
+                    <!--LOG IN Button-->
+                    <!--LOG IN Button-->
+                    <li class="nav-item dropdown" style="border-left: solid 1px black">
+                        <a class="nav-link" href="#" id="navbarLogin" id="navbar-btn-login" onclick="log_in()">
+                            LOG IN
+                        </a>
+
+                        <div id="overlay-login" class="modal">
+                            <form class="modal-content animate" action="#" method="post">
+                                <div class="container container-overlay">
+                                <h4>LOG IN</h4>
+                                <div class="form-group">
+                                    <label for="loginInputEmail">Email address</label>
+                                    <input type="email" class="form-control" id="login-email" placeholder="Email">
                                 </div>
-                            </div>
-                        </li>
+                                <div class="form-group">
+                                    <label for="loginInputEmail">Password</label>
+                                    <input type="password" class="form-control" id="login-pw" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn-outline-primary btn-block">Log in</button>
 
-                        <!--SIGN UP Button-->
-                        <li class="nav-item" style="border-left: solid 1px black">
-                            <a class="nav-link" href="#" id="navbar-btn-signup" onclick="sign_up()">SIGN UP</a>
+                                <a class="btn btn-block btn-social btn-google">
+                                    <span class="fab fa-google"></span>
+                                    Log in with Google
+                                </a>
+                                <a class="btn btn-block btn-social btn-facebook">
+                                    <span class="fab fa-facebook-square"></span>
+                                    Log in with Facebook
+                                </a>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
 
-                            <div id="overlay-signup" class="modal">
-                                <form class="modal-content animate" action="#" method="post">
-                                    <div class="container container-overlay">
-                                        <h4>SIGN UP</h4>
-                                        <div class="form-row">
-                                            <div class="col">
-                                                <label for="loginInputEmail">First Name</label>
-                                                <input type="text" class="form-control" placeholder="First name">
-                                            </div>
-                                            <div class="col">
-                                                <label for="loginInputEmail">Last Name</label>
-                                                <input type="text" class="form-control" placeholder="Last name">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="loginInputEmail">Email address</label>
-                                            <input type="email" class="form-control" id="signup-email" placeholder="Email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="loginInputEmail">Password</label>
-                                            <input type="password" class="form-control" id="signup-pw" placeholder="Password">
-                                        </div>
-                                        <button type="submit" class="btn btn-outline-primary btn-block">SIGN UP</button>
-                                        <a class="btn btn-block btn-social btn-google">
-                                            <span class="fab fa-google"></span>
-                                            SIGN UP with Google
-                                        </a>
-                                        <a class="btn btn-block btn-social btn-facebook">
-                                            <span class="fab fa-facebook-square"></span>
-                                            SIGN UP with Facebook
-                                        </a>
+                    <!--SIGN UP Button-->
+                    <li class="nav-item" style="border-left: solid 1px black">
+                        <a class="nav-link" href="#" id="navbar-btn-signup" onclick="sign_up()">SIGN UP</a>
+
+                        <div id="overlay-signup" class="modal">
+                            <form class="modal-content animate" action="#" method="post">
+                                <div class="container container-overlay">
+                                <h4>SIGN UP</h4>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <label for="loginInputEmail">First Name</label>
+                                        <input type="text" class="form-control" placeholder="First name">
                                     </div>
-                                </form>
-                            </div>
-                        </li>
+                                    <div class="col">
+                                        <label for="loginInputEmail">Last Name</label>
+                                        <input type="text" class="form-control" placeholder="Last name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="loginInputEmail">Email address</label>
+                                    <input type="email" class="form-control" id="signup-email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="loginInputEmail">Password</label>
+                                    <input type="password" class="form-control" id="signup-pw" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn-outline-primary btn-block">Sign up</button>
+                                <a class="btn btn-block btn-social btn-google">
+                                    <span class="fab fa-google"></span>
+                                    Sign up with Google
+                                </a>
+                                <a class="btn btn-block btn-social btn-facebook">
+                                    <span class="fab fa-facebook-square"></span>
+                                    Sign up with Facebook
+                                </a>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
 
 
-                    </ul>
+                </ul>
 
-                </div>
-            </nav>
-            <!--NAVBAR-->
+            </div>
+        </nav>
+        <!--NAVBAR-->
 
             <br>
 
@@ -335,4 +345,11 @@
             </div>
             <br>
         </div>
+        
+        <!-- JavaScript -->
+        <script type="text/javascript" src="./js/navbar.js"></script>
+
     </body>
+    <!--BODY-->
+
+</html>
