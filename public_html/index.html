@@ -15,7 +15,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="js/bootstrap.min.js"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-        
+
         <title>Popcorn</title>
     </head>
 
@@ -53,11 +53,11 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Opening This Week</a>
-                                <a class="dropdown-item" href="#">Top Box Office</a>
-                                <a class="dropdown-item" href="#">Coming Soon to Theaters</a>
-                                <a class="dropdown-item" href="#">Weekend Earnings</a>
+                                <a class="dropdown-item" href="top_box_office.html">Top Box Office</a>
+                                <a class="dropdown-item" href="upcoming_movies.html">Coming Soon to Theaters</a>
+                                <a class="dropdown-item" href="movie_weekend_earnings.html">Weekend Earnings</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Top DVD and Streaming</a>
+                                <a class="dropdown-item" href="top_streaming_movies.html">Top DVD and Streaming</a>
                                 <a class="dropdown-item" href="#">New DVD Releases</a>
                                 <a class="dropdown-item" href="#">Coming Soon to DVD</a>
                                 <div class="dropdown-divider"></div>
@@ -72,8 +72,8 @@
                                 TV
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">New TV Tonight</a>
-                                <a class="dropdown-item" href="#">Most Popular TV</a>
+                                <a class="dropdown-item" href="new_tv_ep_tonight.html">New TV Tonight</a>
+                                <a class="dropdown-item" href="top_tv_show.html">Most Popular TV</a>
                             </div>
                         </li>
                         <!--TV Drop Down Menu-->
@@ -88,85 +88,79 @@
                         </li>
                         <!--TV Drop Down Menu-->
 
-                        <!--SHOWTIMES Drop Down Menu-->
+                        <!--TICKETS & SHOWTIMES Drop Down Menu-->
                         <li class="nav-item" style="border-left: solid 1px black">
                             <a class="nav-link" href="#">
-                                SHOWTIMES
+                                TICKETS & SHOWTIMES
                             </a>
                         </li>
 
                         <!--LOG IN Button-->
                         <li class="nav-item dropdown" style="border-left: solid 1px black">
-                            <a class="nav-link" href="#" id="navbarLogin" id="navbar-btn-login" onclick="log_in()">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 LOG IN
                             </a>
-
-                            <div id="overlay-login" class="modal">
-                                <form class="modal-content animate" action="#" method="post">
-                                    <div class="container container-overlay">
-                                    <h4>Log in</h4>
-                                    <div class="form-group">
-                                        <label for="loginInputEmail">Email address</label>
-                                        <input type="email" class="form-control" id="login-email" placeholder="Email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="loginInputEmail">Password</label>
-                                        <input type="password" class="form-control" id="login-pw" placeholder="Password">
-                                    </div>
-                                    <button type="submit" class="btn btn-outline-primary btn-block">Log in</button>
-
-                                    <a class="btn btn-block btn-social btn-google">
-                                        <span class="fab fa-google"></span>
-                                        Log in with Google
-                                    </a>
-                                    <a class="btn btn-block btn-social btn-facebook">
-                                        <span class="fab fa-facebook-square"></span>
-                                        Log in with Facebook
-                                    </a>
-                                    </div>
-                                </form>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="container">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Save Password</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Log In</button>
+                                    </form>
+                                </div>
                             </div>
                         </li>
 
                         <!--SIGN UP Button-->
                         <li class="nav-item" style="border-left: solid 1px black">
-                            <a class="nav-link" href="#" id="navbar-btn-signup" onclick="sign_up()">Sign up</a>
+                            <a class="nav-link" href="#" id="navbar-btn-signup" onclick="sign_up()">SIGN UP</a>
 
                             <div id="overlay-signup" class="modal">
                                 <form class="modal-content animate" action="#" method="post">
                                     <div class="container container-overlay">
-                                    <h4>SIGN UP</h4>
-                                    <div class="form-row">
-                                        <div class="col">
-                                            <label for="loginInputEmail">First Name</label>
-                                            <input type="text" class="form-control" placeholder="First name">
+                                        <h4>SIGN UP</h4>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label for="loginInputEmail">First Name</label>
+                                                <input type="text" class="form-control" placeholder="First name">
+                                            </div>
+                                            <div class="col">
+                                                <label for="loginInputEmail">Last Name</label>
+                                                <input type="text" class="form-control" placeholder="Last name">
+                                            </div>
                                         </div>
-                                        <div class="col">
-                                            <label for="loginInputEmail">Last Name</label>
-                                            <input type="text" class="form-control" placeholder="Last name">
+                                        <div class="form-group">
+                                            <label for="loginInputEmail">Email address</label>
+                                            <input type="email" class="form-control" id="signup-email" placeholder="Email">
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="loginInputEmail">Email address</label>
-                                        <input type="email" class="form-control" id="signup-email" placeholder="Email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="loginInputEmail">Password</label>
-                                        <input type="password" class="form-control" id="signup-pw" placeholder="Password">
-                                    </div>
-                                    <button type="submit" class="btn btn-outline-primary btn-block">Sign up</button>
-                                    <a class="btn btn-block btn-social btn-google">
-                                        <span class="fab fa-google"></span>
-                                        Sign up with Google
-                                    </a>
-                                    <a class="btn btn-block btn-social btn-facebook">
-                                        <span class="fab fa-facebook-square"></span>
-                                        Sign up with Facebook
-                                    </a>
+                                        <div class="form-group">
+                                            <label for="loginInputEmail">Password</label>
+                                            <input type="password" class="form-control" id="signup-pw" placeholder="Password">
+                                        </div>
+                                        <button type="submit" class="btn btn-outline-primary btn-block">SIGN UP</button>
+                                        <a class="btn btn-block btn-social btn-google">
+                                            <span class="fab fa-google"></span>
+                                            SIGN UP with Google
+                                        </a>
+                                        <a class="btn btn-block btn-social btn-facebook">
+                                            <span class="fab fa-facebook-square"></span>
+                                            SIGN UP with Facebook
+                                        </a>
                                     </div>
                                 </form>
                             </div>
                         </li>
+
 
                     </ul>
 
@@ -468,14 +462,17 @@
             <div class="row">
                 <div class="col-sm" style="text-align: center">
                     <img src="images/incredibles2.jpg" width="300" height="200" class="img-thumbnail" alt="">
+                    <br>
                     <a href="#" class="text-dark">Incredibles 2</a>
                 </div>
                 <div class="col-sm" style="text-align: center">
                     <img src="images/venom.jpg" width="300" height="200" class="img-thumbnail" alt="">
+                    <br>
                     <a href="#" class="text-dark">Venom</a>
                 </div>
                 <div class="col-sm" style="text-align: center">
                     <img src="images/rpo.jpg" width="300" height="200" class="img-thumbnail" alt="">
+                    <br>
                     <a href="#" class="text-dark">Ready Player One</a>
                 </div>
             </div>
@@ -488,14 +485,17 @@
             <div class="row">
                 <div class="col-sm" style="text-align: center">
                     <img src="images/bladerunner.jpg" width="300" height="200" class="img-thumbnail" alt="">
+                    <br>
                     <a href="#" class="text-dark">Top 10 Movies of 2017</a>
                 </div>
                 <div class="col-sm" style="text-align: center">
                     <img src="images/maxresdefault.jpg" width="300" height="200" class="img-thumbnail" alt="">
+                    <br>
                     <a href="#" class="text-dark">Tom Hardy Career Retrospective</a>
                 </div>
                 <div class="col-sm" style="text-align: center">
                     <img src="images/tdkthumb.jpg" width="300" height="200" class="img-thumbnail" alt="">
+                    <br>
                     <a href="#" class="text-dark">Top 10 Superhero Movies of All Time</a>
                 </div>
             </div>
@@ -510,14 +510,12 @@
                         Help
                     </a>
                     <br>
-                    <a href="#" class="text-dark">
+                    <a href="about.html" class="text-dark">
                         About Popcorn
                     </a>
                 </div>
             </div>
-
             <br>
-
         </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

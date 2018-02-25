@@ -14,7 +14,7 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="js/bootstrap.min.js"></script>
-        <title>Black Panther (2018)</title>
+        <title>Chadwick Boseman</title>
     </head>
 
     <!--BODY-->
@@ -51,11 +51,11 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Opening This Week</a>
-                                <a class="dropdown-item" href="#">Top Box Office</a>
-                                <a class="dropdown-item" href="#">Coming Soon to Theaters</a>
-                                <a class="dropdown-item" href="#">Weekend Earnings</a>
+                                <a class="dropdown-item" href="top_box_office.html">Top Box Office</a>
+                                <a class="dropdown-item" href="upcoming_movies.html">Coming Soon to Theaters</a>
+                                <a class="dropdown-item" href="movie_weekend_earnings.html">Weekend Earnings</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Top DVD and Streaming</a>
+                                <a class="dropdown-item" href="top_streaming_movies.html">Top DVD and Streaming</a>
                                 <a class="dropdown-item" href="#">New DVD Releases</a>
                                 <a class="dropdown-item" href="#">Coming Soon to DVD</a>
                                 <div class="dropdown-divider"></div>
@@ -70,8 +70,8 @@
                                 TV
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">New TV Tonight</a>
-                                <a class="dropdown-item" href="#">Most Popular TV</a>
+                                <a class="dropdown-item" href="new_tv_ep_tonight.html">New TV Tonight</a>
+                                <a class="dropdown-item" href="top_tv_show.html">Most Popular TV</a>
                             </div>
                         </li>
                         <!--TV Drop Down Menu-->
@@ -121,10 +121,44 @@
 
                         <!--SIGN UP Button-->
                         <li class="nav-item" style="border-left: solid 1px black">
-                            <a class="nav-link" href="#">
-                                SIGN UP
-                            </a>
+                            <a class="nav-link" href="#" id="navbar-btn-signup" onclick="sign_up()">Sign up</a>
+
+                            <div id="overlay-signup" class="modal">
+                                <form class="modal-content animate" action="#" method="post">
+                                    <div class="container container-overlay">
+                                        <h4>SIGN UP</h4>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label for="loginInputEmail">First Name</label>
+                                                <input type="text" class="form-control" placeholder="First name">
+                                            </div>
+                                            <div class="col">
+                                                <label for="loginInputEmail">Last Name</label>
+                                                <input type="text" class="form-control" placeholder="Last name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="loginInputEmail">Email address</label>
+                                            <input type="email" class="form-control" id="signup-email" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="loginInputEmail">Password</label>
+                                            <input type="password" class="form-control" id="signup-pw" placeholder="Password">
+                                        </div>
+                                        <button type="submit" class="btn btn-outline-primary btn-block">Sign up</button>
+                                        <a class="btn btn-block btn-social btn-google">
+                                            <span class="fab fa-google"></span>
+                                            Sign up with Google
+                                        </a>
+                                        <a class="btn btn-block btn-social btn-facebook">
+                                            <span class="fab fa-facebook-square"></span>
+                                            Sign up with Facebook
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
                         </li>
+
 
                     </ul>
 
@@ -224,11 +258,288 @@
 
                     <h4>Filmography</h4>
                     <br>
+                    <h6>Film</h6>
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">RATING</th>
+                                <th scope="col">TITLE</th>
+                                <th scope="col">CREDIT</th>
+                                <th scope="col">BOX OFFICE</th>
+                                <th scope="col">YEAR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        97%</span></th>
+                                <th><a href="movie_detail.html" class="text-dark">Black Panther</a></th>
+                                <th>T'Challa/Black Panther</th>
+                                <th>N/A</th>
+                                <th>2018</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        83%</span></th>
+                                <th><a href="#" class="text-dark">Marshall</a></th>
+                                <th>Thurgood Marshall</th>
+                                <th>$9.5M</th>
+                                <th>2017</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        91%</span></th>
+                                <th><a href="#" class="text-dark">Captain America: Civil War</a></th>
+                                <th>T'Challa/Black Panther</th>
+                                <th>$408.1M</th>
+                                <th>2016</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        15%</span></th>
+                                <th><a href="#" class="text-dark">Gods Of Egypt</a></th>
+                                <th>Thoth</th>
+                                <th>$31.2M</th>
+                                <th>2016</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        43%</span></th>
+                                <th><a href="#" class="text-dark">Message from the King</a></th>
+                                <th>Jacob King</th>
+                                <th>N/A</th>
+                                <th>2016</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        80%</span></th>
+                                <th><a href="#" class="text-dark">Get On Up</a></th>
+                                <th>James Brown</th>
+                                <th>$22.9M</th>
+                                <th>2014</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        59%</span></th>
+                                <th><a href="#" class="text-dark">Draft Day</a></th>
+                                <th>Vontae Mack</th>
+                                <th>$21.2M</th>
+                                <th>2014</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        N/A</span></th>
+                                <th><a href="#" class="text-dark">Perfect Day</a></th>
+                                <th><i>Producer</i></th>
+                                <th>N/A</th>
+                                <th>2014</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        79%</span></th>
+                                <th><a href="#" class="text-dark">42</a></th>
+                                <th>Jackie Robinson</th>
+                                <th>$95.1M</th>
+                                <th>2013</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        17%</span></th>
+                                <th><a href="#" class="text-dark">The Kill Hole</a></th>
+                                <th>Lt. Samuel Drake</th>
+                                <th>N/A</th>
+                                <th>2012</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        18%</span></th>
+                                <th><a href="#" class="text-dark">Princess Ka'iulani</a></th>
+                                <th><i>Executive Producer</i></th>
+                                <th>$0.9M</th>
+                                <th>2010</th>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br>
+                    <h6>TV</h6>
+                    <table class="table" id="filmographyTV">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">RATING</th>
+                                <th scope="col">TITLE</th>
+                                <th scope="col">CREDIT</th>
+                                <th scope="col">YEAR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        N/A</span></th>
+                                <th><a href="#" class="text-dark">The Ellen DeGeneres Show</a></th>
+                                <th><i>Guest</i></th>
+                                <th>2018, 2014</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        N/A</span></th>
+                                <th><a href="#" class="text-dark">The View</a></th>
+                                <th><i>Guest</i></th>
+                                <th>2018, 2017, 2014, 2013</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        N/A</span></th>
+                                <th><a href="#" class="text-dark">Jimmy Kimmel Live</a></th>
+                                <th><i>Guest</i></th>
+                                <th>2018, 2017, 2016, 2013, 2012</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        N/A</span></th>
+                                <th><a href="#" class="text-dark">Tavis Smiley</a></th>
+                                <th><i>Guest</i></th>
+                                <th>2017, 2014</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        33%</span></th>
+                                <th><a href="#" class="text-dark">Chelsea</a></th>
+                                <th><i>Guest</i></th>
+                                <th>2016</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        N/A</span></th>
+                                <th><a href="#" class="text-dark">Late Night With Seth Myers</a></th>
+                                <th><i>Guest</i></th>
+                                <th>2016, 2014</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        N/A</span></th>
+                                <th><a href="#" class="text-dark">Late Show With David Letterman</a></th>
+                                <th><i>Guest</i></th>
+                                <th>2014</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        N/A</span></th>
+                                <th><a href="#" class="text-dark">The Tonight Show Starring Jimmy Fallon</a></th>
+                                <th><i>Guest</i></th>
+                                <th>2014</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        N/A</span></th>
+                                <th><a href="#" class="text-dark">The Tonight Show With Jay Leno</a></th>
+                                <th><i>Guest</i></th>
+                                <th>2013</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        83%</span></th>
+                                <th><a href="#" class="text-dark">Detroit 1-8-7</a></th>
+                                <th>Tommy Westin</th>
+                                <th>2011</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        97%</span></th>
+                                <th><a href="#" class="text-dark">Justified</a></th>
+                                <th>Flex</th>
+                                <th>2011</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        75%</span></th>
+                                <th><a href="#" class="text-dark">Castle</a></th>
+                                <th>Chuck Russell</th>
+                                <th>2011, 2010</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        22%</span></th>
+                                <th><a href="#" class="text-dark">Persons Unknown</a></th>
+                                <th>Sergeant Graham McNair</th>
+                                <th>2010</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        N/A</span></th>
+                                <th><a href="#" class="text-dark">Lie to Me</a></th>
+                                <th>Cabe McNeil</th>
+                                <th>2009</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        N/A</span></th>
+                                <th><a href="#" class="text-dark">Lincoln Heights</a></th>
+                                <th>Nate Ray</th>
+                                <th>2009</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        N/A</span></th>
+                                <th><a href="#" class="text-dark">Cold Case</a></th>
+                                <th>Dexter Collins</th>
+                                <th>2008</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        N/A</span></th>
+                                <th><a href="#" class="text-dark">CSI: NY</a></th>
+                                <th>Rondo</th>
+                                <th>2006</th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        N/A</span></th>
+                                <th><a href="#" class="text-dark">Law & Order</a></th>
+                                <th>Foster Keyes</th>
+                                <th>2004</th>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br>
                     <hr>
-                    
+
                     <h4>Character Quotes</h4>
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">CHARACTER</th>
+                                <th scope="col">QUOTE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <b>T'Challa/Black Panther</b>
+                                </th>
+                                <th>
+                                    Move Captain.  I will not ask a second time.
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
                     <br>
                 </div>
             </div>
+            
+            <div class="row">
+                <div class="col-sm">
+                    <a href="#" class="text-dark">
+                        Help
+                    </a>
+                    <br>
+                    <a href="about.html" class="text-dark">
+                        About Popcorn
+                    </a>
+                </div>
+            </div>
+            <br>
         </div>
     </body>
