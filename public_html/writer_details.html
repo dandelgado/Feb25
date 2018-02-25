@@ -7,14 +7,17 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+        <link rel="stylesheet" href="css/bootstrap-social.css">
+        <link rel="stylesheet" href="./css/navbar.css">
         <link rel="stylesheet" href="css/movie_detail_style.css">
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="js/bootstrap.min.js"></script>
-        <title>Joe Robert Cole</title>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+        <title>Joe Robert Cole - Popcorn</title>
     </head>
 
     <!--BODY-->
@@ -94,28 +97,36 @@
                         </li>
 
                         <!--LOG IN Button-->
+                        <!--LOG IN Button-->
                         <li class="nav-item dropdown" style="border-left: solid 1px black">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link" href="#" id="navbarLogin" id="navbar-btn-login" onclick="log_in()">
                                 LOG IN
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <div class="container">
-                                    <form>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Email address</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword1">Password</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                            <label class="form-check-label" for="exampleCheck1">Save Password</label>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Log In</button>
-                                    </form>
-                                </div>
+
+                            <div id="overlay-login" class="modal">
+                                <form class="modal-content animate" action="#" method="post">
+                                    <div class="container container-overlay">
+                                    <h4>LOG IN</h4>
+                                    <div class="form-group">
+                                        <label for="loginInputEmail">Email address</label>
+                                        <input type="email" class="form-control" id="login-email" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="loginInputEmail">Password</label>
+                                        <input type="password" class="form-control" id="login-pw" placeholder="Password">
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-primary btn-block">Log in</button>
+
+                                    <a class="btn btn-block btn-social btn-google">
+                                        <span class="fab fa-google"></span>
+                                        Log in with Google
+                                    </a>
+                                    <a class="btn btn-block btn-social btn-facebook">
+                                        <span class="fab fa-facebook-square"></span>
+                                        Log in with Facebook
+                                    </a>
+                                    </div>
+                                </form>
                             </div>
                         </li>
 
@@ -126,34 +137,34 @@
                             <div id="overlay-signup" class="modal">
                                 <form class="modal-content animate" action="#" method="post">
                                     <div class="container container-overlay">
-                                        <h4>SIGN UP</h4>
-                                        <div class="form-row">
-                                            <div class="col">
-                                                <label for="loginInputEmail">First Name</label>
-                                                <input type="text" class="form-control" placeholder="First name">
-                                            </div>
-                                            <div class="col">
-                                                <label for="loginInputEmail">Last Name</label>
-                                                <input type="text" class="form-control" placeholder="Last name">
-                                            </div>
+                                    <h4>SIGN UP</h4>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="loginInputEmail">First Name</label>
+                                            <input type="text" class="form-control" placeholder="First name">
                                         </div>
-                                        <div class="form-group">
-                                            <label for="loginInputEmail">Email address</label>
-                                            <input type="email" class="form-control" id="signup-email" placeholder="Email">
+                                        <div class="col">
+                                            <label for="loginInputEmail">Last Name</label>
+                                            <input type="text" class="form-control" placeholder="Last name">
                                         </div>
-                                        <div class="form-group">
-                                            <label for="loginInputEmail">Password</label>
-                                            <input type="password" class="form-control" id="signup-pw" placeholder="Password">
-                                        </div>
-                                        <button type="submit" class="btn btn-outline-primary btn-block">SIGN UP</button>
-                                        <a class="btn btn-block btn-social btn-google">
-                                            <span class="fab fa-google"></span>
-                                            SIGN UP with Google
-                                        </a>
-                                        <a class="btn btn-block btn-social btn-facebook">
-                                            <span class="fab fa-facebook-square"></span>
-                                            SIGN UP with Facebook
-                                        </a>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="loginInputEmail">Email address</label>
+                                        <input type="email" class="form-control" id="signup-email" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="loginInputEmail">Password</label>
+                                        <input type="password" class="form-control" id="signup-pw" placeholder="Password">
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-primary btn-block">Sign up</button>
+                                    <a class="btn btn-block btn-social btn-google">
+                                        <span class="fab fa-google"></span>
+                                        Sign up with Google
+                                    </a>
+                                    <a class="btn btn-block btn-social btn-facebook">
+                                        <span class="fab fa-facebook-square"></span>
+                                        Sign up with Facebook
+                                    </a>
                                     </div>
                                 </form>
                             </div>
@@ -333,4 +344,11 @@
             </div>
             <br>
         </div>
+        
+        <!-- JavaScript -->
+        <script type="text/javascript" src="./js/navbar.js"></script>
+
     </body>
+    <!--BODY-->
+
+</html>
