@@ -1,0 +1,45 @@
+   .user-icon{
+       width:60px;
+       height:60px;
+   }
+   .company-icon{
+       width:15px;
+       height:15px;
+   }
+   .movie-score-icon{
+       width:25px;
+       height:25px;
+   }
+
+   .pagination .page-item.active .page-link {
+    background-color: #f34a5b; 
+    border:#f34a5b}
+    .pagination.page-item.active .page-link:hover {
+        background-color: #f34a5b; 
+    border:#f34a5b }
+    .pagination .page-item .page-link {
+        color:black; 
+    }
+
+
+   .movie-img{
+       width:200px;
+       height:300px;
+   }
+   .reviews{
+       border:1px solid lightgrey;
+       border-radius:5px;
+       padding:20px;
+       margin-left:-10px;
+   }
+
+   .side-bar{
+    border:1px solid lightgrey;
+       border-radius:5px;
+       padding:20px;
+   }
+
+   .movie-name{
+       font-weight:bold;
+   }
+ 
