@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/movie_detail_style.css">
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <title>Joe Robert Cole</title>
+    </head>
+
+    <!--BODY-->
+    <body class="bg-dark">
+        <div class="container bg-white">
+
+            <!--NAVBAR-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/popcorn.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    Popcorn
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav ml-auto">
+
+                        <!--Search Bar-->
+                        <li>
+                            <form class="form-inline" style="padding-right: 30px;">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-default" type="submit">Search</button>
+                            </form>
+                        </li>
+                        <!--Search Bar-->
+
+                        <!--Movies & DVDs Drop Down Menu-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MOVIES & DVDs
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Opening This Week</a>
+                                <a class="dropdown-item" href="top_box_office.html">Top Box Office</a>
+                                <a class="dropdown-item" href="upcoming_movies.html">Coming Soon to Theaters</a>
+                                <a class="dropdown-item" href="movie_weekend_earnings.html">Weekend Earnings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="top_streaming_movies.html">Top DVD and Streaming</a>
+                                <a class="dropdown-item" href="#">New DVD Releases</a>
+                                <a class="dropdown-item" href="#">Coming Soon to DVD</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Browse All</a>
+                            </div>
+                        </li>
+                        <!--Movies & DVDs Drop Down Menu-->
+
+                        <!--TV Drop Down Menu-->
+                        <li class="nav-item dropdown" style="border-left: solid 1px black">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                TV
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="new_tv_ep_tonight.html">New TV Tonight</a>
+                                <a class="dropdown-item" href="top_tv_show.html">Most Popular TV</a>
+                            </div>
+                        </li>
+                        <!--TV Drop Down Menu-->
+
+                        <!--TV Drop Down Menu-->
+                        <li class="nav-item dropdown" style="border-left: solid 1px black">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                NEWS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            </div>
+                        </li>
+                        <!--TV Drop Down Menu-->
+
+                        <!--TICKETS & SHOWTIMES Drop Down Menu-->
+                        <li class="nav-item" style="border-left: solid 1px black">
+                            <a class="nav-link" href="#">
+                                TICKETS & SHOWTIMES
+                            </a>
+                        </li>
+
+                        <!--LOG IN Button-->
+                        <li class="nav-item dropdown" style="border-left: solid 1px black">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                LOG IN
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="container">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Save Password</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Log In</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--SIGN UP Button-->
+                        <li class="nav-item" style="border-left: solid 1px black">
+                            <a class="nav-link" href="#" id="navbar-btn-signup" onclick="sign_up()">SIGN UP</a>
+
+                            <div id="overlay-signup" class="modal">
+                                <form class="modal-content animate" action="#" method="post">
+                                    <div class="container container-overlay">
+                                        <h4>SIGN UP</h4>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label for="loginInputEmail">First Name</label>
+                                                <input type="text" class="form-control" placeholder="First name">
+                                            </div>
+                                            <div class="col">
+                                                <label for="loginInputEmail">Last Name</label>
+                                                <input type="text" class="form-control" placeholder="Last name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="loginInputEmail">Email address</label>
+                                            <input type="email" class="form-control" id="signup-email" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="loginInputEmail">Password</label>
+                                            <input type="password" class="form-control" id="signup-pw" placeholder="Password">
+                                        </div>
+                                        <button type="submit" class="btn btn-outline-primary btn-block">SIGN UP</button>
+                                        <a class="btn btn-block btn-social btn-google">
+                                            <span class="fab fa-google"></span>
+                                            SIGN UP with Google
+                                        </a>
+                                        <a class="btn btn-block btn-social btn-facebook">
+                                            <span class="fab fa-facebook-square"></span>
+                                            SIGN UP with Facebook
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </nav>
+            <!--NAVBAR-->
+
+            <br>
+
+            <div id="actorDetails">
+                <div class="container">
+                    <div class="row">
+                        <div id="actorName" class="container">
+                            <h3>Joe Robert Cole</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-3" align="center">
+                            <img class="img-thumbnail thumbnail" alt="Responsive image" src="images/default_icon.png">
+                        </div>
+
+                        <div class="col-md-9">
+                            <!--<div class="row">
+                                <div class="col-sm">
+                                    <h5><b>HIGHEST RATED</b></h5>
+                                    <h3>97%</h3>
+                                    <p><b>Black Panther (2018)</b></p>
+                                </div>
+
+                                <div class="col-sm">
+                                    <h5><b>LOWEST RATED</b></h5>
+                                    <h3>15%</h3>
+                                    <p><b>Gods of Egypt (2016)</b></p>
+                                </div>
+                            </div> -->
+
+                            <div class="row">
+                                <p><br>
+                                    <b>Highest Rated:</b> Black Panther (2018) <span class="badge badge-primary badge-pill bg-danger">97%</span><br>
+                                    <b>Lowest Rated:</b> Black Panther (2018) <span class="badge badge-primary badge-pill bg-danger">97%</span><br>
+                                    <b>Birthday:</b> not available<br>
+                                    <b>Birthplace:</b> not available<br>
+                                    <b>Biography:</b> not available<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- <h4>Photos</h4> 
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-sm" style="text-align: center">
+                                <img src="images/thumb11.jpg" width="300" height="200" class="img-thumbnail" alt="">
+                            </div>
+                            <div class="col-sm" style="text-align: center">
+                                <img src="images/thumb10.jpg" width="300" height="200" class="img-thumbnail" alt="">
+                            </div>
+                            <div class="col-sm" style="text-align: center">
+                                <img src="images/thumb8.jpg" width="300" height="200" class="img-thumbnail" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a href="#" class="text-dark">
+                                View All Photos »
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <hr> -->
+
+                    <h4>Highest Rated Movies</h4> 
+                    <div class="row">
+                        <div class="col-sm" style="text-align: center">
+                            <a href="movie_detail.html" class="text-dark"><img src="images/panther.jpeg" width="300" height="200" class="img-thumbnail" alt=""></a>
+                            <br>
+                            <a href="movie_detail.html" class="text-dark"><b>Black Panther</b></a>
+                            <br>
+                            <span class="badge badge-primary badge-pill bg-danger">97%</span>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+
+                    <h4>Filmography</h4>
+                    <br>
+                    <h6>Film</h6>
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">RATING</th>
+                                <th scope="col">TITLE</th>
+                                <th scope="col">CREDIT</th>
+                                <th scope="col">BOX OFFICE</th>
+                                <th scope="col">YEAR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        97%</span></th>
+                                <th><a href="movie_detail.html" class="text-dark">Black Panther</a></th>
+                                <th><i>Screenwriter</i></th>
+                                <th>N/A</th>
+                                <th>2018</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    
+                    <h6>TV</h6>
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">RATING</th>
+                                <th scope="col">TITLE</th>
+                                <th scope="col">CREDIT</th>
+                                <th scope="col">YEAR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><span class="badge badge-primary badge-pill bg-danger">
+                                        90%</span></th>
+                                <th><a href="movie_detail.html" class="text-dark">American Crime Story</a></th>
+                                <th><i>Screenwriter</i></th>
+                                <th>2016</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <hr>
+
+                    <h4>Character Quotes</h4>
+                    <p>No quotes approved yet.</p>
+                    <!-- <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">CHARACTER</th>
+                                <th scope="col">QUOTE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <b>T'Challa/Black Panther</b>
+                                </th>
+                                <th>
+                                    Move Captain.  I will not ask a second time.
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table> -->
+
+                    <br>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-sm">
+                    <a href="#" class="text-dark">
+                        Help
+                    </a>
+                    <br>
+                    <a href="about.html" class="text-dark">
+                        About Popcorn
+                    </a>
+                </div>
+            </div>
+            <br>
+        </div>
+    </body>
