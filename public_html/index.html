@@ -7,12 +7,15 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+        <link rel="stylesheet" href="css/bootstrap-social.css">
+        <link rel="stylesheet" href="./css/navbar.css">
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        
         <title>Popcorn</title>
     </head>
 
@@ -35,10 +38,12 @@
                     <ul class="navbar-nav ml-auto">
 
                         <!--Search Bar-->
-                        <form class="form-inline" style="padding-right: 30px;">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-default" type="submit">Search</button>
-                        </form>
+                        <li>
+                            <form class="form-inline" style="padding-right: 30px;">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-default" type="submit">Search</button>
+                            </form>
+                        </li>
                         <!--Search Bar-->
 
                         <!--Movies & DVDs Drop Down Menu-->
@@ -83,44 +88,84 @@
                         </li>
                         <!--TV Drop Down Menu-->
 
-                        <!--TICKETS & SHOWTIMES Drop Down Menu-->
+                        <!--SHOWTIMES Drop Down Menu-->
                         <li class="nav-item" style="border-left: solid 1px black">
                             <a class="nav-link" href="#">
-                                TICKETS & SHOWTIMES
+                                SHOWTIMES
                             </a>
                         </li>
 
                         <!--LOG IN Button-->
                         <li class="nav-item dropdown" style="border-left: solid 1px black">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link" href="#" id="navbarLogin" id="navbar-btn-login" onclick="log_in()">
                                 LOG IN
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <div class="container">
-                                    <form>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Email address</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword1">Password</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                            <label class="form-check-label" for="exampleCheck1">Save Password</label>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Log In</button>
-                                    </form>
-                                </div>
+
+                            <div id="overlay-login" class="modal">
+                                <form class="modal-content animate" action="#" method="post">
+                                    <div class="container container-overlay">
+                                    <h4>Log in</h4>
+                                    <div class="form-group">
+                                        <label for="loginInputEmail">Email address</label>
+                                        <input type="email" class="form-control" id="login-email" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="loginInputEmail">Password</label>
+                                        <input type="password" class="form-control" id="login-pw" placeholder="Password">
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-primary btn-block">Log in</button>
+
+                                    <a class="btn btn-block btn-social btn-google">
+                                        <span class="fab fa-google"></span>
+                                        Log in with Google
+                                    </a>
+                                    <a class="btn btn-block btn-social btn-facebook">
+                                        <span class="fab fa-facebook-square"></span>
+                                        Log in with Facebook
+                                    </a>
+                                    </div>
+                                </form>
                             </div>
                         </li>
 
                         <!--SIGN UP Button-->
                         <li class="nav-item" style="border-left: solid 1px black">
-                            <a class="nav-link" href="#">
-                                SIGN UP
-                            </a>
+                            <a class="nav-link" href="#" id="navbar-btn-signup" onclick="sign_up()">Sign up</a>
+
+                            <div id="overlay-signup" class="modal">
+                                <form class="modal-content animate" action="#" method="post">
+                                    <div class="container container-overlay">
+                                    <h4>SIGN UP</h4>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="loginInputEmail">First Name</label>
+                                            <input type="text" class="form-control" placeholder="First name">
+                                        </div>
+                                        <div class="col">
+                                            <label for="loginInputEmail">Last Name</label>
+                                            <input type="text" class="form-control" placeholder="Last name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="loginInputEmail">Email address</label>
+                                        <input type="email" class="form-control" id="signup-email" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="loginInputEmail">Password</label>
+                                        <input type="password" class="form-control" id="signup-pw" placeholder="Password">
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-primary btn-block">Sign up</button>
+                                    <a class="btn btn-block btn-social btn-google">
+                                        <span class="fab fa-google"></span>
+                                        Sign up with Google
+                                    </a>
+                                    <a class="btn btn-block btn-social btn-facebook">
+                                        <span class="fab fa-facebook-square"></span>
+                                        Sign up with Facebook
+                                    </a>
+                                    </div>
+                                </form>
+                            </div>
                         </li>
 
                     </ul>
@@ -177,27 +222,27 @@
                 <!--OPENING THIS WEEK-->
                 <div class="col-sm">
                     <p><b>OPENING THIS WEEK</b></p>
-                    <ul class="list-group list-group-flush">
-                        <a href="movie_detail.html" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Black Panther
-                            <span class="badge badge-primary badge-pill bg-danger">97%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Early Man
-                            <span class="badge badge-primary badge-pill bg-danger">81%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Samson
-                            <span class="badge badge-primary badge-pill bg-danger">20%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            The Party
-                            <span class="badge badge-primary badge-pill bg-danger">85%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Loveless (Nelyubov)
-                            <span class="badge badge-primary badge-pill bg-danger">93%</span>
-                        </a>
+                    <ul class="list-group list-group-flush" style="list-style: none;">
+                        <li><a href="movie_detail.html" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Black Panther
+                                <span class="badge badge-primary badge-pill bg-danger">97%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Early Man
+                                <span class="badge badge-primary badge-pill bg-danger">81%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Samson
+                                <span class="badge badge-primary badge-pill bg-danger">20%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                The Party
+                                <span class="badge badge-primary badge-pill bg-danger">85%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Loveless (Nelyubov)
+                                <span class="badge badge-primary badge-pill bg-danger">93%</span>
+                            </a></li>
                     </ul>
                     <a href="#" class="text-dark">
                         View All »
@@ -207,47 +252,47 @@
                 <!--TOP BOX OFFICE-->
                 <div class="col-sm">
                     <p><b>TOP BOX OFFICE</b></p>
-                    <ul class="list-group list-group-flush">
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Fifty Shades Freed
-                            <span class="badge badge-primary badge-pill bg-danger">11%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Peter Rabbit
-                            <span class="badge badge-primary badge-pill bg-danger">58%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            The 15:17 to Paris
-                            <span class="badge badge-primary badge-pill bg-danger">25%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Jumanji: Welcome to the Jungle
-                            <span class="badge badge-primary badge-pill bg-danger">76%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            The Greatest Showman
-                            <span class="badge badge-primary badge-pill bg-danger">55%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Maze Runner: The Death Cure
-                            <span class="badge badge-primary badge-pill bg-danger">43%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Winchester
-                            <span class="badge badge-primary badge-pill bg-danger">11%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            The Post
-                            <span class="badge badge-primary badge-pill bg-danger">88%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Hostiles
-                            <span class="badge badge-primary badge-pill bg-danger">73%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            The Shape of Water
-                            <span class="badge badge-primary badge-pill bg-danger">92%</span>
-                        </a>
+                    <ul class="list-group list-group-flush" style="list-style: none;">
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Fifty Shades Freed
+                                <span class="badge badge-primary badge-pill bg-danger">11%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Peter Rabbit
+                                <span class="badge badge-primary badge-pill bg-danger">58%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                The 15:17 to Paris
+                                <span class="badge badge-primary badge-pill bg-danger">25%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Jumanji: Welcome to the Jungle
+                                <span class="badge badge-primary badge-pill bg-danger">76%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                The Greatest Showman
+                                <span class="badge badge-primary badge-pill bg-danger">55%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Maze Runner: The Death Cure
+                                <span class="badge badge-primary badge-pill bg-danger">43%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Winchester
+                                <span class="badge badge-primary badge-pill bg-danger">11%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                The Post
+                                <span class="badge badge-primary badge-pill bg-danger">88%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Hostiles
+                                <span class="badge badge-primary badge-pill bg-danger">73%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                The Shape of Water
+                                <span class="badge badge-primary badge-pill bg-danger">92%</span>
+                            </a></li>
                     </ul>
                     <a href="#" class="text-dark">
                         View All »
@@ -257,27 +302,27 @@
                 <!--COMING SOON TO THEATERS-->
                 <div class="col-sm">
                     <p><b>COMING SOON TO THEATERS</b></p>
-                    <ul class="list-group list-group-flush">
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Annihilation
-                            <span class="badge badge-primary badge-pill bg-danger">No Score Yet</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Game Night
-                            <span class="badge badge-primary badge-pill bg-danger">No Score Yet</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Every Day
-                            <span class="badge badge-primary badge-pill bg-danger">No Score Yet</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Mute
-                            <span class="badge badge-primary badge-pill bg-danger">No Score Yet</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            The Young Karl Marx (LE JEUNE KARL MARX)
-                            <span class="badge badge-primary badge-pill bg-danger">40%</span>
-                        </a>
+                    <ul class="list-group list-group-flush" style="list-style: none;">
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Annihilation
+                                <span class="badge badge-primary badge-pill bg-danger">No Score Yet</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Game Night
+                                <span class="badge badge-primary badge-pill bg-danger">No Score Yet</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Every Day
+                                <span class="badge badge-primary badge-pill bg-danger">No Score Yet</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Mute
+                                <span class="badge badge-primary badge-pill bg-danger">No Score Yet</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                The Young Karl Marx (LE JEUNE KARL MARX)
+                                <span class="badge badge-primary badge-pill bg-danger">40%</span>
+                            </a></li>
                     </ul>
                     <a href="#" class="text-dark">
                         View All »
@@ -295,31 +340,31 @@
                 <!--OPENING THIS WEEK-->
                 <div class="col-sm">
                     <p><b>NEW EPISODES TONIGHT</b></p>
-                    <ul class="list-group list-group-flush">
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Crazy Ex-Girlfriend
-                            <span class="badge badge-primary badge-pill bg-danger">100%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            The Trade
-                            <span class="badge badge-primary badge-pill bg-danger">89%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Everything Sucks!
-                            <span class="badge badge-primary badge-pill bg-danger">63%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Mozart in the Jungle
-                            <span class="badge badge-primary badge-pill bg-danger">No Score Yet</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Strike Back
-                            <span class="badge badge-primary badge-pill bg-danger">No Score Yet</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Cardinal
-                            <span class="badge badge-primary badge-pill bg-danger">No Score Yet</span>
-                        </a>
+                    <ul class="list-group list-group-flush" style="list-style: none;">
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Crazy Ex-Girlfriend
+                                <span class="badge badge-primary badge-pill bg-danger">100%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                The Trade
+                                <span class="badge badge-primary badge-pill bg-danger">89%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Everything Sucks!
+                                <span class="badge badge-primary badge-pill bg-danger">63%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Mozart in the Jungle
+                                <span class="badge badge-primary badge-pill bg-danger">No Score Yet</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Strike Back
+                                <span class="badge badge-primary badge-pill bg-danger">No Score Yet</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Cardinal
+                                <span class="badge badge-primary badge-pill bg-danger">No Score Yet</span>
+                            </a></li>
                     </ul>
                     <a href="#" class="text-dark">
                         View All »
@@ -329,47 +374,47 @@
                 <!--TOP BOX OFFICE-->
                 <div class="col-sm">
                     <p><b>MOST POPULAR TV</b></p>
-                    <ul class="list-group list-group-flush">
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Altered Carbon
-                            <span class="badge badge-primary badge-pill bg-danger">63%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Black Lightning
-                            <span class="badge badge-primary badge-pill bg-danger">100%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Babylon Berlin
-                            <span class="badge badge-primary badge-pill bg-danger">100%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Counterpart
-                            <span class="badge badge-primary badge-pill bg-danger">100%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            The End of the F***ing World
-                            <span class="badge badge-primary badge-pill bg-danger">97%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Our Cartoon President
-                            <span class="badge badge-primary badge-pill bg-danger">32%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            American Crime Story
-                            <span class="badge badge-primary badge-pill bg-danger">85%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            The Magicians
-                            <span class="badge badge-primary badge-pill bg-danger">72%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Black Mirror
-                            <span class="badge badge-primary badge-pill bg-danger">92%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            The Fosters
-                            <span class="badge badge-primary badge-pill bg-danger">100%</span>
-                        </a>
+                    <ul class="list-group list-group-flush" style="list-style: none;">
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Altered Carbon
+                                <span class="badge badge-primary badge-pill bg-danger">63%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Black Lightning
+                                <span class="badge badge-primary badge-pill bg-danger">100%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Babylon Berlin
+                                <span class="badge badge-primary badge-pill bg-danger">100%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Counterpart
+                                <span class="badge badge-primary badge-pill bg-danger">100%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                The End of the F***ing World
+                                <span class="badge badge-primary badge-pill bg-danger">97%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Our Cartoon President
+                                <span class="badge badge-primary badge-pill bg-danger">32%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                American Crime Story
+                                <span class="badge badge-primary badge-pill bg-danger">85%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                The Magicians
+                                <span class="badge badge-primary badge-pill bg-danger">72%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Black Mirror
+                                <span class="badge badge-primary badge-pill bg-danger">92%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                The Fosters
+                                <span class="badge badge-primary badge-pill bg-danger">100%</span>
+                            </a></li>
                     </ul>
                     <a href="#" class="text-dark">
                         View All »
@@ -388,27 +433,27 @@
                 <!--TOP DVD & STREAMING-->
                 <div class="col-sm">
                     <p><b>TOP DVD & STREAMING</b></p>
-                    <ul class="list-group list-group-flush">
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Justice League
-                            <span class="badge badge-primary badge-pill bg-danger">40%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Wonder
-                            <span class="badge badge-primary badge-pill bg-danger">85%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Coco
-                            <span class="badge badge-primary badge-pill bg-danger">97%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Three Billboards Outside Ebbing, Missouri
-                            <span class="badge badge-primary badge-pill bg-danger">93%</span>
-                        </a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                            Roman J. Israel, Esq.
-                            <span class="badge badge-primary badge-pill bg-danger">51%</span>
-                        </a>
+                    <ul class="list-group list-group-flush" style="list-style: none;">
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Justice League
+                                <span class="badge badge-primary badge-pill bg-danger">40%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Wonder
+                                <span class="badge badge-primary badge-pill bg-danger">85%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Coco
+                                <span class="badge badge-primary badge-pill bg-danger">97%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Three Billboards Outside Ebbing, Missouri
+                                <span class="badge badge-primary badge-pill bg-danger">93%</span>
+                            </a></li>
+                        <li><a href="#" class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                                Roman J. Israel, Esq.
+                                <span class="badge badge-primary badge-pill bg-danger">51%</span>
+                            </a></li>
                     </ul>
                     <a href="#" class="text-dark">
                         View All »
@@ -422,16 +467,16 @@
             <h1 class="page-header"><b>TRAILERS</b></h1>
             <div class="row">
                 <div class="col-sm" style="text-align: center">
-                    <img src="images/incredibles2.jpg" width="300" height="200" alt="">
-                    <p>Incredibles 2</p>
+                    <img src="images/incredibles2.jpg" width="300" height="200" class="img-thumbnail" alt="">
+                    <a href="#" class="text-dark">Incredibles 2</a>
                 </div>
                 <div class="col-sm" style="text-align: center">
-                    <img src="images/venom.jpg" width="300" height="200" alt="">
-                    <p>Venom</p>
+                    <img src="images/venom.jpg" width="300" height="200" class="img-thumbnail" alt="">
+                    <a href="#" class="text-dark">Venom</a>
                 </div>
                 <div class="col-sm" style="text-align: center">
-                    <img src="images/rpo.jpg" width="300" height="200" alt="">
-                    <p>Ready Player One</p>
+                    <img src="images/rpo.jpg" width="300" height="200" class="img-thumbnail" alt="">
+                    <a href="#" class="text-dark">Ready Player One</a>
                 </div>
             </div>
             <a href="#" class="text-dark">
@@ -440,27 +485,23 @@
             <hr>
 
             <h1 class="page-header"><b>NEWS</b></h1>
-            <div class="col-sm">
-                <div class="row">
-                    <div class="col-sm" style="text-align: center">
-                        <img src="images/bladerunner.jpg" width="300" height="200" alt="">
-                        <p>Top 10 Movies of 2017</p>
-                    </div>
-                    <div class="col-sm" style="text-align: center">
-                        <img src="images/maxresdefault.jpg" width="300" height="200" alt="">
-                        <p>Tom Hardy Career Retrospective</p>
-                    </div>
-                    <div class="col-sm" style="text-align: center">
-                        <img src="images/tdkthumb.jpg" width="300" height="200" alt="">
-                        <p>Top 10 Superhero Movies of All Time</p>
-                    </div>
+            <div class="row">
+                <div class="col-sm" style="text-align: center">
+                    <img src="images/bladerunner.jpg" width="300" height="200" class="img-thumbnail" alt="">
+                    <a href="#" class="text-dark">Top 10 Movies of 2017</a>
                 </div>
-                <div class="row">
-                    <a href="#" class="text-dark">
-                        View All »
-                    </a>
+                <div class="col-sm" style="text-align: center">
+                    <img src="images/maxresdefault.jpg" width="300" height="200" class="img-thumbnail" alt="">
+                    <a href="#" class="text-dark">Tom Hardy Career Retrospective</a>
+                </div>
+                <div class="col-sm" style="text-align: center">
+                    <img src="images/tdkthumb.jpg" width="300" height="200" class="img-thumbnail" alt="">
+                    <a href="#" class="text-dark">Top 10 Superhero Movies of All Time</a>
                 </div>
             </div>
+            <a href="#" class="text-dark">
+                View All »
+            </a>
             <hr>
 
             <div class="row">
@@ -478,7 +519,10 @@
             <br>
 
         </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script type="text/javascript" src="./js/navbar.js"></script>
+
     </body>
-    <!--BODY-->
 
 </html>
