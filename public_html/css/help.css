@@ -1,0 +1,22 @@
+ .contact_us{
+            border:1px solid lightgrey;
+       border-radius:5px;
+       padding:20px;
+       margin-left:-10px;
+        }
+        .ssn{
+            width:30px;
+            height:30px;
+        }
+
+        .ssn-list li{
+            display:inline;
+            margin-right:5px;
+        }
+
+.help-body{
+    border:1px solid lightgrey;
+    border-radius:5px;
+    padding:20px;
+    margin-left:-10px;
+}
