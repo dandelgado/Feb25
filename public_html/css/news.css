@@ -1,0 +1,32 @@
+.news-body{
+    border:1px solid lightgrey;
+    border-radius:5px;
+    padding:20px;
+    margin-left:-10px;
+    
+}
+
+.right-bar{
+    border:1px solid lightgrey;
+    border-radius:5px;
+    padding:20px;
+    margin-left:-10px;
+
+}
+
+.news-title{
+    margin-top:20px;
+}
+
+.news-pic{
+   margin:15px 0px 15px 0px;
+}
+
+.news-info{
+    font-size:15px;
+}
+
+.news-share-icon{
+    width:30px;
+    height:30px;
+}

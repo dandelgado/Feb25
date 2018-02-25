@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+        <link rel="stylesheet" href="css/bootstrap-social.css">
+        <link rel="stylesheet" href="./css/navbar.css">
+        <link rel="stylesheet" href="./css/news.css">
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+        <title>Popcorn</title>
+    </head>
+
+    <!--BODY-->
+    <body class="bg-dark">
+        <div class="container bg-white">
+
+            <!--NAVBAR-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/popcorn.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    Popcorn
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav ml-auto">
+
+                        <!--Search Bar-->
+                        <li>
+                            <form class="form-inline" style="padding-right: 30px;">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-default" type="submit">Search</button>
+                            </form>
+                        </li>
+                        <!--Search Bar-->
+
+                        <!--Movies & DVDs Drop Down Menu-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MOVIES & DVDs
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Opening This Week</a>
+                                <a class="dropdown-item" href="top_box_office.html">Top Box Office</a>
+                                <a class="dropdown-item" href="upcoming_movies.html">Coming Soon to Theaters</a>
+                                <a class="dropdown-item" href="movie_weekend_earnings.html">Weekend Earnings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="top_streaming_movies.html">Top DVD and Streaming</a>
+                                <a class="dropdown-item" href="#">New DVD Releases</a>
+                                <a class="dropdown-item" href="#">Coming Soon to DVD</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Browse All</a>
+                            </div>
+                        </li>
+                        <!--Movies & DVDs Drop Down Menu-->
+
+                        <!--TV Drop Down Menu-->
+                        <li class="nav-item dropdown" style="border-left: solid 1px black">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                TV
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="new_tv_ep_tonight.html">New TV Tonight</a>
+                                <a class="dropdown-item" href="top_tv_show.html">Most Popular TV</a>
+                            </div>
+                        </li>
+                        <!--TV Drop Down Menu-->
+
+                        <!--TV Drop Down Menu-->
+                        <li class="nav-item dropdown" style="border-left: solid 1px black">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                NEWS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            </div>
+                        </li>
+                        <!--TV Drop Down Menu-->
+
+                        <!--TICKETS & SHOWTIMES Drop Down Menu-->
+                        <li class="nav-item" style="border-left: solid 1px black">
+                            <a class="nav-link" href="#">
+                                TICKETS & SHOWTIMES
+                            </a>
+                        </li>
+
+                        <!--LOG IN Button-->
+                        <li class="nav-item dropdown" style="border-left: solid 1px black">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                LOG IN
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="container">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Save Password</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Log In</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--SIGN UP Button-->
+                        <li class="nav-item" style="border-left: solid 1px black">
+                            <a class="nav-link" href="#" id="navbar-btn-signup" onclick="sign_up()">SIGN UP</a>
+
+                            <div id="overlay-signup" class="modal">
+                                <form class="modal-content animate" action="#" method="post">
+                                    <div class="container container-overlay">
+                                        <h4>SIGN UP</h4>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label for="loginInputEmail">First Name</label>
+                                                <input type="text" class="form-control" placeholder="First name">
+                                            </div>
+                                            <div class="col">
+                                                <label for="loginInputEmail">Last Name</label>
+                                                <input type="text" class="form-control" placeholder="Last name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="loginInputEmail">Email address</label>
+                                            <input type="email" class="form-control" id="signup-email" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="loginInputEmail">Password</label>
+                                            <input type="password" class="form-control" id="signup-pw" placeholder="Password">
+                                        </div>
+                                        <button type="submit" class="btn btn-outline-primary btn-block">SIGN UP</button>
+                                        <a class="btn btn-block btn-social btn-google">
+                                            <span class="fab fa-google"></span>
+                                            SIGN UP with Google
+                                        </a>
+                                        <a class="btn btn-block btn-social btn-facebook">
+                                            <span class="fab fa-facebook-square"></span>
+                                            SIGN UP with Facebook
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </nav>
+            <!--NAVBAR-->
+
+            <br>
+            <div class="container-fluid page-body">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="news-body">
+                            <H3 class="news-title">BOX OFFICE: BLACK PANTHER POUNCES ON 5TH BEST OPENING OF ALL-TIME
+                                </H3>
+                                <p class="text-muted news-info">
+                                    by Gitesh Pandya | February 19, 2018|<img src="images/comment.png"><a href="#comments"> 10 Comments</a>
+                                </p>
+                                <hr>
+                                <div class="news-share">
+                                        <img src="images/fb.png" class="news-share-icon">
+                                        <img src="images/fb.png" class="news-share-icon">
+                                        <img src="images/fb.png" class="news-share-icon">
+                                        <img src="images/fb.png" class="news-share-icon">
+                                        <!--todo-->
+                                    </div>
+                                <img src="images/news-panther.jpg" class="news-pic">
+                                <br>
+                                
+                                <p class="news-content">
+                                            All the stars aligned perfectly for the Marvel super hero smash Black Panther which crushed all expectations shattering box office records in the process. King T’Challa and his team attracted a massive turnout of fans opening to a jaw-dropping $235M over the four-day Presidents Day holiday weekend, according to estimates. The three-day Friday-to-Sunday portion came in at a colossal $201.8M. It was the biggest debut ever for the holiday frame, the month of February, and the entire pre-summer January-to-April span. Plus it was second best all-time for any comic book movie ever.
+                                </p><p>
+                                        Overall, Black Panther generated the fifth largest opening weekend of all-time (Friday-to-Sunday) behind Star Wars: The Force Awakens ($248M), Star Wars: The Last Jedi ($220M), Jurassic World ($208.8M), and The Avengers ($207.4M). That is amazing company. The much anticipated PG-13 super hero film was expected to be huge, but the results actually flew higher once movie fans had the chance to start coming out. The four-day average was a gargantuan $58,458 from 4,020 locations.
+                                    </p><p>
+                                        The weekend began with $25.2M from Thursday night pre-shows which were part of the full opening day gross of $75.8M. Saturday dipped to $65.9M while Sunday dropped slightly to an enormous $60.1M. That was the second biggest Sunday gross in box office history for any film. Only Force Awakens ever did better with a slightly higher $60.6M in 2015. Monday is projected by Disney to make another $33.2M, and of course there is a whole road ahead in February and March. Blasting past $500M by the end of the domestic run looks extremely likely.
+                                    </p><p>
+                                        Deadpool held the old record for biggest opening weekend over the Presidents Day weekend frame with $152.2M over four days and its three-day take of $132.4M was the February record. The previous high for any film in the January through April corridor was last year’s Beauty and the Beast with a $174.8M bow in March. Black Panther once again proves that the right film with the right consumer excitement can soar to any height at any point of the year.
+                                        </p><p>
+                                        Reviews were terrific across the board for Panther and audiences felt the same way giving it a perfect A+ grade from CinemaScore. Add in no major competition next week and this hit will smash $300M and $400M in no time. Studio data showed a crowd that was 55% male and 61% over 25. 23% of the gross came from 3D including IMAX and 4DX screens.
+                                    </p><p>
+                                        Overseas, Black Panther was red hot too opening to a stellar $169M through Sunday without any gross from China, Japan, or Russia which launch in the weeks ahead. That makes for a colossal global debut of $371M just through Sunday with so much still to come. Panther has proven around the world that it can attract Avengers-level grosses with a majority-black cast and can beat most of the super hero films that had majority-white casts. This is a billion dollar Panther in the making.
+                                    </p><p>
+                                        Spending on all the rest of the movies at the box office combined still did not amount to half of what T’Challa did. Leading the rest of the pack in second place was the kidpic Peter Rabbit with an estimated $23M over the four-day holiday period which was off slighlty from its three-day debut last weekend. Sony has banked a solid $54.1M overall. Fifty Shades Freed took a tumble from first to third with an estimated $18.9M falling sharply as a threequel might be expected to. Universal has grossed $78.1M in North America and $268.9M worldwide.
+                                    </p><p>
+                                        Sony cruised past the $900M global mark this weekend with the unstoppable adventure smash Jumanji: Welcome to the Jungle which grossed an estimated $10M over the long weekend for its ninth straight frame in the top five. Domestic now stands at $379.7M with worldwide climbing to an incredible $906M. Clint Eastwood’s The 15:17 to Paris fell to an estimated $9.1M putting Warner Bros. at $26.9M.
+                                    </p><p>
+                                        Fox’s hit musical The Greatest Showman saw a four-day take of $6.3M, according to estimates. The new total is $155.6M. Lionsgate opened the new animated film Early Man but found few takers as the four-day bow was only an estimated $4.2M from 2,494 locations for a puny $1,684 average over four days.
+                                    </p><p>
+                                        Maze Runner: The Death Cure followed with an estimated $3.2M pushing the new cume to $54.6M. The fright flick Winchester dropped to an estimated $2.6M raising the sum for CBS and Lionsgate to $22.2M. Rounding out the top ten was The Post with an estimated $2.5M giving Fox $77.1M to date.
+                                    </p><p>
+                                        The top ten films grossed a massive estimate of $314.7M over the long four-day weekend led by the Wakanda epic which was up 102% from last year’s holiday when The LEGO Batman Movie held onto number one with $42.7M; and up 25% from 2016 when Deadpool debuted in the top spot with a then-record $152.2M.
+                                </p>
+                        </div>
+                        <div class="comments" id="comments">
+                            <!--todo-->
+                        </div>
+
+
+                    </div>
+                <div class="col-lg-4">
+                        <div class="right-bar">
+                            <h4>Related News</h4>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <hr>
+            <!-- Bottom margin -->
+            <div class="row">
+                <div class="col-sm">
+                    <a href="#" class="text-dark">
+                        Help
+                    </a>
+                    <br>
+                    <a href="about.html" class="text-dark">
+                        About Popcorn
+                    </a>
+                </div>
+            </div>
+            <br>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script type="text/javascript" src="./js/navbar.js"></script>
+
+    </body>
+
+</html>
