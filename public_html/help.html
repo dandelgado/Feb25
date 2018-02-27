@@ -15,7 +15,7 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="js/bootstrap.min.js"></script>
-        
+
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
         <title>Help</title>
@@ -80,59 +80,58 @@
                         </li>
                         <!--TV Drop Down Menu-->
 
-                        <!--TV Drop Down Menu-->
+                        <!--News Drop Down Menu
                         <li class="nav-item dropdown" style="border-left: solid 1px black">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 NEWS
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <div class="dropdown-item" >
+                                <div class="dropdown-item" >
                                     <div class="col-sm" style="text-align: center">
-                                            <img src="images/news-panther.jpg" width="200" height="100" class="img-thumbnail" alt="">
-                                            <br>
-                                            <a href="news.html" target="_blank" class="text-dark">BLACK PANTHER POUNCES ON 5TH BEST OPENING OF ALL-TIME</a>
-                                        </div>
+                                        <img src="images/news-panther.jpg" width="200" height="100" class="img-thumbnail" alt="">
+                                        <br>
+                                        <a href="news.html" target="_blank" class="text-dark">BLACK PANTHER POUNCES ON 5TH BEST OPENING OF ALL-TIME</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
                         </li>
-                        <!--TV Drop Down Menu-->
+                        News Drop Down Menu-->
 
-                        <!--TICKETS & SHOWTIMES Drop Down Menu-->
+                        <!--TICKETS & SHOWTIMES Drop Down Menu
                         <li class="nav-item" style="border-left: solid 1px black">
                             <a class="nav-link" href="#">
                                 TICKETS & SHOWTIMES
                             </a>
-                        </li>
+                        </li>-->
 
                         <!--LOG IN Button-->
-                        <!--LOG IN Button-->
                         <li class="nav-item dropdown" style="border-left: solid 1px black">
-                            <a class="nav-link" href="#" id="navbarLogin" id="navbar-btn-login" onclick="log_in()">
+                            <a class="nav-link" href="#" id="navbarLogin" onclick="log_in()">
                                 LOG IN
                             </a>
 
                             <div id="overlay-login" class="modal">
                                 <form class="modal-content animate" action="#" method="post">
                                     <div class="container container-overlay">
-                                    <h4>LOG IN</h4>
-                                    <div class="form-group">
-                                        <label for="loginInputEmail">Email address</label>
-                                        <input type="email" class="form-control" id="login-email" placeholder="Email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="loginInputEmail">Password</label>
-                                        <input type="password" class="form-control" id="login-pw" placeholder="Password">
-                                    </div>
-                                    <button type="submit" class="btn btn-outline-primary btn-block">Log in</button>
+                                        <h4>LOG IN</h4>
+                                        <div class="form-group">
+                                            <label for="loginInputEmail">Email address</label>
+                                            <input type="email" class="form-control" id="login-email" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="loginInputEmail">Password</label>
+                                            <input type="password" class="form-control" id="login-pw" placeholder="Password">
+                                        </div>
+                                        <button type="submit" class="btn btn-outline-primary btn-block">Log in</button>
 
-                                    <a class="btn btn-block btn-social btn-google">
-                                        <span class="fab fa-google"></span>
-                                        Log in with Google
-                                    </a>
-                                    <a class="btn btn-block btn-social btn-facebook">
-                                        <span class="fab fa-facebook-square"></span>
-                                        Log in with Facebook
-                                    </a>
+                                        <a class="btn btn-block btn-social btn-google">
+                                            <span class="fab fa-google"></span>
+                                            Log in with Google
+                                        </a>
+                                        <a class="btn btn-block btn-social btn-facebook">
+                                            <span class="fab fa-facebook-square"></span>
+                                            Log in with Facebook
+                                        </a>
                                     </div>
                                 </form>
                             </div>
@@ -145,34 +144,34 @@
                             <div id="overlay-signup" class="modal">
                                 <form class="modal-content animate" action="#" method="post">
                                     <div class="container container-overlay">
-                                    <h4>SIGN UP</h4>
-                                    <div class="form-row">
-                                        <div class="col">
-                                            <label for="loginInputEmail">First Name</label>
-                                            <input type="text" class="form-control" placeholder="First name">
+                                        <h4>SIGN UP</h4>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label for="loginInputEmail">First Name</label>
+                                                <input type="text" class="form-control" placeholder="First name">
+                                            </div>
+                                            <div class="col">
+                                                <label for="loginInputEmail">Last Name</label>
+                                                <input type="text" class="form-control" placeholder="Last name">
+                                            </div>
                                         </div>
-                                        <div class="col">
-                                            <label for="loginInputEmail">Last Name</label>
-                                            <input type="text" class="form-control" placeholder="Last name">
+                                        <div class="form-group">
+                                            <label for="loginInputEmail">Email address</label>
+                                            <input type="email" class="form-control" id="signup-email" placeholder="Email">
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="loginInputEmail">Email address</label>
-                                        <input type="email" class="form-control" id="signup-email" placeholder="Email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="loginInputEmail">Password</label>
-                                        <input type="password" class="form-control" id="signup-pw" placeholder="Password">
-                                    </div>
-                                    <button type="submit" class="btn btn-outline-primary btn-block">Sign up</button>
-                                    <a class="btn btn-block btn-social btn-google">
-                                        <span class="fab fa-google"></span>
-                                        Sign up with Google
-                                    </a>
-                                    <a class="btn btn-block btn-social btn-facebook">
-                                        <span class="fab fa-facebook-square"></span>
-                                        Sign up with Facebook
-                                    </a>
+                                        <div class="form-group">
+                                            <label for="loginInputEmail">Password</label>
+                                            <input type="password" class="form-control" id="signup-pw" placeholder="Password">
+                                        </div>
+                                        <button type="submit" class="btn btn-outline-primary btn-block">Sign up</button>
+                                        <a class="btn btn-block btn-social btn-google">
+                                            <span class="fab fa-google"></span>
+                                            Sign up with Google
+                                        </a>
+                                        <a class="btn btn-block btn-social btn-facebook">
+                                            <span class="fab fa-facebook-square"></span>
+                                            Sign up with Facebook
+                                        </a>
                                     </div>
                                 </form>
                             </div>
@@ -191,109 +190,109 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="help-body">
-                            
+
                             <h3>FAQs</h3>
                             <hr>
                             <div class="panel-group" id="accordion">
                                 <div class="panel panel-default">
-                                  <div class="panel-heading">
-                                    <p class="panel-title">
-                                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="text-dark">
-                                      - Can I reset my password?</a>
-                                    </p>
-                                  </div>
-                                  <div id="collapse1" class="panel-collapse collapse in">
-                                    <div class="panel-body text-muted">Yes. You can change your password in your account page.</div>
-                                  </div>
-                                </div>
-                                <div class="panel panel-default">
-                                  <div class="panel-heading">
-                                    <p class="panel-title">
-                                      <a data-toggle="collapse" data-parent="#accordion" class="text-dark" href="#collapse2">
-                                      - Can I delete a review that I posted?</a>
-                                    </p>
-                                  </div>
-                                  <div id="collapse2" class="panel-collapse collapse">
-                                    <div class="panel-body text-muted">Yes. You can delete your review in your account page.</div>
-                                  </div>
+                                    <div class="panel-heading">
+                                        <p class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="text-dark">
+                                                - Can I reset my password?</a>
+                                        </p>
+                                    </div>
+                                    <div id="collapse1" class="panel-collapse collapse in">
+                                        <div class="panel-body text-muted">Yes. You can change your password in your account page.</div>
+                                    </div>
                                 </div>
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                      <p class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" class="text-dark" href="#collapse3">
-                                        - How can I report an abuse?</a>
-                                      </p>
+                                        <p class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" class="text-dark" href="#collapse2">
+                                                - Can I delete a review that I posted?</a>
+                                        </p>
+                                    </div>
+                                    <div id="collapse2" class="panel-collapse collapse">
+                                        <div class="panel-body text-muted">Yes. You can delete your review in your account page.</div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <p class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" class="text-dark" href="#collapse3">
+                                                - How can I report an abuse?</a>
+                                        </p>
                                     </div>
                                     <div id="collapse3" class="panel-collapse collapse">
-                                      <div class="panel-body text-muted">Please submit <a data-toggle="modal" href="#">Email Form</a> to tell us.</div>
+                                        <div class="panel-body text-muted">Please submit <a data-toggle="modal" href="#">Email Form</a> to tell us.</div>
                                     </div>
-                                  </div>
-                                  <div class="panel panel-default">
+                                </div>
+                                <div class="panel panel-default">
                                     <div class="panel-heading">
-                                      <p class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="text-dark">
-                                        - What should I do if I find incorrect information?</a>
-                                      </p>
+                                        <p class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="text-dark">
+                                                - What should I do if I find incorrect information?</a>
+                                        </p>
                                     </div>
                                     <div id="collapse4" class="panel-collapse collapse in">
-                                      <div class="panel-body text-muted">We really appreciate your contribution to our system. Please submit a <a href="#" data-toggle="modal">form</a> to report the issue to us. </div>
+                                        <div class="panel-body text-muted">We really appreciate your contribution to our system. Please submit a <a href="#" data-toggle="modal">form</a> to report the issue to us. </div>
                                     </div>
-                                  </div>
-                                  <div class="panel panel-default">
+                                </div>
+                                <div class="panel panel-default">
                                     <div class="panel-heading">
-                                      <p class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" class="text-dark" href="#collapse5">
-                                        - Can I delete a review that I posted?</a>
-                                      </p>
+                                        <p class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" class="text-dark" href="#collapse5">
+                                                - Can I delete a review that I posted?</a>
+                                        </p>
                                     </div>
                                     <div id="collapse5" class="panel-collapse collapse">
-                                      <div class="panel-body text-muted">Yes. You can delete your review in your account page.</div>
+                                        <div class="panel-body text-muted">Yes. You can delete your review in your account page.</div>
                                     </div>
-                                  </div>
-                                  <div class="panel panel-default">
-                                      <div class="panel-heading">
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
                                         <p class="panel-title">
-                                          <a data-toggle="collapse" data-parent="#accordion" class="text-dark" href="#collapse6">
-                                          - How can I report an abuse?</a>
+                                            <a data-toggle="collapse" data-parent="#accordion" class="text-dark" href="#collapse6">
+                                                - How can I report an abuse?</a>
                                         </p>
-                                      </div>
-                                      <div id="collapse6" class="panel-collapse collapse">
+                                    </div>
+                                    <div id="collapse6" class="panel-collapse collapse">
                                         <div class="panel-body text-muted">Please submit <a data-toggle="modal" href="#">Email Form</a> to tell us.</div>
-                                      </div>
                                     </div>
                                 </div>
                             </div>
-                        
-                        
                         </div>
+
+
+                    </div>
 
                     <div class="col-lg-4">
                         <div class="contact_us">
                             <h5 >CONTACT US</h5>
                             <hr>
                             <p><b>Customer Support</b>
-                            <br>
-                            Fill out our <a href="#">Email Form</a>.
-                        </p>
-                       
-                        <p><b>Submit Movie Information</b>
-                            <br>
-                            <a data-toggle="modal" href="#">Tell us</a> about missing or incorrect movie or TV information
-                        </p>
-                        <p><b>Follow Us</b>
-                            <br>
+                                <br>
+                                Fill out our <a href="#">Email Form</a>.
+                            </p>
+
+                            <p><b>Submit Movie Information</b>
+                                <br>
+                                <a data-toggle="modal" href="#">Tell us</a> about missing or incorrect movie or TV information
+                            </p>
+                            <p><b>Follow Us</b>
+                                <br>
                             <ul class="list-unstyled ssn-list">
                                 <li><img src="images/fb.png" class="ssn"></li>
                                 <li><img src="images/twitter.png" class="ssn"></li>
                             </ul>
-                        </p> 
+                            </p> 
                         </div>
                     </div>
                 </div>
 
             </div>
 
-          
+
 
 
             <hr>
